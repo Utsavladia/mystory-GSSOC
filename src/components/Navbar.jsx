@@ -49,7 +49,7 @@ const NavBar = () => {
   const navClass = `py-1  rounded-full border 
   border-[#616161] hover:border-[#191919]
   hover:bg-[#F1F5F9] hover:text-black transform transition-all duration-300 font-semibold 
-  my-2  px-6 hover:px-5`;
+  my-2  px-6 md:px-2 xl:px-6 hover:px-5 `;
 
   return (
     <div className="border-b border-b-neutral-300 dark:border-b-neutral-700 fixed top-0 left-0 right-0 bg-white dark:bg-black backdrop-blur-lg bg-opacity-60 z-50">
@@ -59,14 +59,14 @@ const NavBar = () => {
       />
 
       <Toaster />
-      <div className="mx-8 lg:mx-6 xl:mx-16 flex justify-between items-center">
+      <div className="px-2 lg:px-4 xl:px-12 flex justify-between items-center">
         <Link href="/" className="text-4xl font-bold">
           <div className=" relative h-24 w-24 mr-6">
             {/* <Image src="/mystory-new-logo/mystory-logo.svg" fill /> */}
           </div>
         </Link>
 
-        <div className="justify-center gap-6 hidden lg:flex items-center">
+        <div className="justify-center text-sm gap-4 md:gap-2 xl:gap-4 hidden lg:flex items-center">
           <Link href="/" className={navClass}>
             <i className="ri-home-fill mr-2"></i>
             <span>Home</span>
@@ -133,7 +133,7 @@ const NavBar = () => {
                   onHover={{ scale: 1.1 }}
                   onTap={{ scale: 0.9 }}
                   onClick={toggleMode}
-                  className="bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-800 dark:text-white  rounded-full mx-3 p-3 cursor-pointer hover:bg-gray-300 relative bottom-1"
+                  className="bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-800 dark:text-white  rounded-full mx-3 p-3 md:p-2 xl:p-3 cursor-pointer hover:bg-gray-300 relative bottom-1"
                 >
                   <LightModeIcon />
                 </div>
@@ -143,7 +143,7 @@ const NavBar = () => {
                   onHover={{ scale: 1.1 }}
                   onTap={{ scale: 0.9 }}
                   onClick={toggleMode}
-                  className="bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-800 dark:text-white  rounded-full mx-3 p-3 cursor-pointer hover:bg-gray-300 relative bottom-1"
+                  className="bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-800 dark:text-white  rounded-full mx-3 p-3 md:p-2 xl-p-3 cursor-pointer hover:bg-gray-300 relative bottom-1"
                 >
                   <DarkModeIcon />
                 </div>
